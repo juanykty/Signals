@@ -1,0 +1,38 @@
+﻿<Window x:Class="SignalsFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignalsFinal"
+        mc:Ignorable="d"
+        Title="Signals" Height="300" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label1" Content="Signals&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="135" FontSize="40" Height="74"/>
+        <Button x:Name="Button1" Content="Empezar" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" Width="780" Height="58" FontSize="40" Click="Button1_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="DarkGreen"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+        <Image x:Name="Signal" HorizontalAlignment="Center" Height="249" Margin="0,182,0,0" VerticalAlignment="Top" Width="250" Source="" Stretch="Uniform"/>
+
+    </Grid>
+</Window>

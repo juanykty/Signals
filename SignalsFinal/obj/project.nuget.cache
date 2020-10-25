@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "givaKI5iA7zG1wnkWBgQZq3bn3WcDBKQdeJpkj4P5McpnZ4h9GdP6LIBBytbbXV5BNdn23o2ciY6dKXHKfolxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juan1\\source\\repos\\SignalsFinal\\SignalsFinal\\SignalsFinal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juan1\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.13.0\\microsoft.cognitiveservices.speech.1.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

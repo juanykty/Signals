@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image1.jpg" />
     <Resource Include="Images\Image1.jpg" />
   </ItemGroup>
 

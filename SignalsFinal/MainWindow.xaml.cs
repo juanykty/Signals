@@ -35,6 +35,8 @@ namespace SignalsFinal
                 Application.Current.MainWindow.Height = 800;
                 STT stt = new STT();
                 await stt.Main();
+                //aqui si sirve
+                //mw.Signal.Source = new BitmapImage(new Uri(@"/Image1.jpg", UriKind.Relative));
 
             }
             else
@@ -42,6 +44,8 @@ namespace SignalsFinal
                 Button1.Content = "Empezar";
                 Button1.Background = Brushes.DarkGreen;
                 Application.Current.MainWindow.Height = 300;
+                Signal.Source = new BitmapImage(new Uri(@"", UriKind.Relative));
+
             }
         }
     }

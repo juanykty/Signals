@@ -31,10 +31,10 @@ namespace SignalsFinal
             MessageBox.Show("El programa comenzara a escuchar tu equipo");
             var result = await recognizer.RecognizeOnceAsync();
             var reason = GetRecognitionResultReason(result);
-            MessageBox.Show(reason)
+            MessageBox.Show(reason);
             MainWindow mw = new MainWindow();
-            mw.Signal.Source = System.Windows.Media.ImageSource(BitmapSource("Images/Image1.jpg"));
-
+            //pending to fix
+            mw.Signal.Source = new BitmapImage(new Uri(@"/Image1.jpg", UriKind.Relative));
         }
         static string GetRecognitionResultReason(SpeechRecognitionResult result) =>
             result.Reason switch

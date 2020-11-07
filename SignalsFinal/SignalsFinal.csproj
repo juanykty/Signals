@@ -7,15 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Image1.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.13.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Image1.jpg" />
     <Resource Include="Images\Image1.jpg" />
   </ItemGroup>
 

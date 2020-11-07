@@ -16,7 +16,8 @@ using Microsoft.CognitiveServices.Speech;
 
 namespace SignalsFinal
 {
-    public class STT
+
+    public class STT : Window
     {
         static readonly string SPEECH_SERVICE_KEY = Environment.GetEnvironmentVariable(nameof(SPEECH_SERVICE_KEY));
         static readonly string SPEECH_SERVICE_REGION = Environment.GetEnvironmentVariable(nameof(SPEECH_SERVICE_REGION));
@@ -26,15 +27,18 @@ namespace SignalsFinal
         }
         static async Task RecognizeSpeechAsync()
         {
+//            MainWindow mw = new MainWindow();
+//            mw.Signal.Source = new BitmapImage(new Uri(@"Images/Image1.jpg", UriKind.Relative));
+
             var config = SpeechConfig.FromSubscription("asd", "asd");
             using var recognizer = new SpeechRecognizer(config);
             MessageBox.Show("El programa comenzara a escuchar tu equipo");
             var result = await recognizer.RecognizeOnceAsync();
             var reason = GetRecognitionResultReason(result);
-            MessageBox.Show(reason);
-            MainWindow mw = new MainWindow();
+            //           MessageBox.Show(reason);
             //pending to fix
-            mw.Signal.Source = new BitmapImage(new Uri(@"/Image1.jpg", UriKind.Relative));
+            MainWindow mw = new MainWindow();
+            mw.Signal.Source = new BitmapImage(new Uri(@"/Images/Image1.jpg", UriKind.Relative));
         }
         static string GetRecognitionResultReason(SpeechRecognitionResult result) =>
             result.Reason switch

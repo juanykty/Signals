@@ -40,3 +40,4 @@ C:\Users\juan1\source\repos\SignalsFinal\SignalsFinal\obj\Debug\netcoreapp3.1\Si
 C:\Users\juan1\source\repos\SignalsFinal\SignalsFinal\obj\Debug\netcoreapp3.1\SignalsFinal.dll
 C:\Users\juan1\source\repos\SignalsFinal\SignalsFinal\obj\Debug\netcoreapp3.1\SignalsFinal.pdb
 C:\Users\juan1\source\repos\SignalsFinal\SignalsFinal\obj\Debug\netcoreapp3.1\SignalsFinal.genruntimeconfig.cache
+C:\Users\juan1\source\repos\SignalsFinal\SignalsFinal\obj\Debug\netcoreapp3.1\SignalsFinal.csprojAssemblyReference.cache

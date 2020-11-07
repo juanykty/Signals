@@ -22,7 +22,11 @@ namespace SignalsFinal
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        public void SetImage(String Image)
+        {
+            MessageBox.Show("s");
+            Signal.Source = new BitmapImage(new Uri(@"/Images/Image1.jpg", UriKind.Relative));
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -32,17 +36,13 @@ namespace SignalsFinal
 
             if (Button1.Content.ToString() == "Empezar")
             {
-                Test test = new Test();
-                test.SetImage();
-
                 Button1.Content = "Detener";
                 Button1.Background = Brushes.DarkRed;
                 Application.Current.MainWindow.Height = 800;
                 STT stt = new STT();
                 await stt.Main();
                 //aqui si sirve
-//                Signal.Source = new BitmapImage(new Uri(@"/Images/Image1.jpg", UriKind.Relative));
-
+                SetImage("");
             }
             else
             {
@@ -53,15 +53,6 @@ namespace SignalsFinal
 
             }
         }
-    }
-}
 
-public class Test
-{
-    public void SetImage()
-    {
-        MainWindow mw = new MainWindow();
-        mw.Signal.Source = new BitmapImage(new Uri(@"/Images/Image1.jpg", UriKind.Relative));
-        MessageBox.Show("asd");
     }
 }

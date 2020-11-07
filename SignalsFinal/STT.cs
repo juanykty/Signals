@@ -27,18 +27,15 @@ namespace SignalsFinal
         }
         static async Task RecognizeSpeechAsync()
         {
-//            MainWindow mw = new MainWindow();
-//            mw.Signal.Source = new BitmapImage(new Uri(@"Images/Image1.jpg", UriKind.Relative));
-
             var config = SpeechConfig.FromSubscription("asd", "asd");
             using var recognizer = new SpeechRecognizer(config);
             MessageBox.Show("El programa comenzara a escuchar tu equipo");
             var result = await recognizer.RecognizeOnceAsync();
             var reason = GetRecognitionResultReason(result);
-            //           MessageBox.Show(reason);
+//          MessageBox.Show(reason);
             //pending to fix
-            MainWindow mw = new MainWindow();
-            mw.Signal.Source = new BitmapImage(new Uri(@"/Images/Image1.jpg", UriKind.Relative));
+//          MainWindow mw = new MainWindow();
+//          mw.SetImage("");
         }
         static string GetRecognitionResultReason(SpeechRecognitionResult result) =>
             result.Reason switch
